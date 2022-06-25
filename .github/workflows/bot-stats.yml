@@ -24,5 +24,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Pururin test
+      - name: Scathach bot test
         run: npm run test:stats
