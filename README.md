@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990353746729001010/disgrowth.png" alt="disgrowth"></a>
+<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990435233683894332/disgrowth-memek.png" alt="disgrowth"></a>
 
 
 <h4 align="center">A growth increments for your Discord bots</h4>
@@ -9,7 +9,8 @@
 	<a href="https://codeclimate.com/github/sinkaroid/disgrowth/maintainability"><img src="https://api.codeclimate.com/v1/badges/726d1d6eb057432f9432/maintainability" /></a>
 </p>
 
-Disgrowth is a module for Discord bots. It allows you to check your bot's growth statistics, update periodically every hour, and the hope that it will be reusable for every bot developers.  
+Disgrowth is a module for Discord bots. It allows you to check your bot's growth statistics,  
+Update hourly, and the hope that it will be reusable for every bot developers.  
 [The prerequisites](#Prerequisites) should be met before using this library.
 
 <a href="https://github.com/sinkaroid/disgrowth/blob/master/CONTRIBUTING.md">Contributing</a> •

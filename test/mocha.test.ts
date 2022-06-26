@@ -1,4 +1,4 @@
-import Disgrowth from "../build/index";
+import Disgrowth from "../index";
 import chai from "chai";
 import { Data } from "../src/interfaces";
 const expect = chai.expect;
