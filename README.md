@@ -184,7 +184,7 @@ bot.myStats().then((res) => { console.log("myStats", res); });
 ```
 
 ## Limitations
-- `stats_daily` and `stats_hourly` are stric limited to 25 items, If you want to save them all in every months You should save them in somewhere else, like database.
+- `stats_daily` and `stats_hourly` are limited to 25 items, If you want to save them all in every months You should save them in somewhere else, like database.
 
 ## Legal
 This tool can be freely copied, modified, altered, distributed without any attribution whatsoever. However, if you feel
