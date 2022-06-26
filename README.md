@@ -39,14 +39,13 @@ Update hourly, and the hope that it will be reusable for every bot developers.
 There is a plenty monitoring and observability service for cloud-scale application, such as StatsD, DataDog, Prometheus, and etc. Those services are great for monitoring, but require a lot of effort to posts every parts and setup properly, many people probably still confused how to extends their discord bots with those services. Apart from complexity, the services is running, means It will consume extra Memory than usual, especially DataDog.
 
 ## The solution
-There is a simple way to monitor your bot's growth.  
-This library allows you to check your bot's growth statistics, no need posts any data, no need to extends or change your bot constructor, out of the box and less of pain.  
+There is a simple way to monitor your bot's growth. This library allows you to check your bot's growth statistics, no need posts any data, no need to extends or change your bot constructor, out of the box and less of pain.  
 
 For non JavaScript libraries, [there is an API for it](https://github.com/sinkaroid/disgrowth/tree/api)!  
 
 
 ## Features
-Don't expect more with zero configuration, compared with the real observability services, of course it won't be a "wow" or "sick", but the point is it can give you actionable data related your bots increments.  
+Don't expect more with zero configuration, the point is it can give you actionable data related your bots increments.  
 
 - Summary stats daily and hourly
 - Average increments
@@ -55,7 +54,7 @@ Don't expect more with zero configuration, compared with the real observability 
 - Expect even more features in the future..
 
 <table>
-	<td><b>NOTE:</b> This module just give you an actionable data.<br>If you really want to build a real monitoring service with a bar chart, fancy graph or anything, use real analytics and interactive visualization web apps</td>
+	<td><b>NOTE:</b> This module just give you an actionable data. If you really want to build a real monitoring service with a bar chart, fancy graph or anything, use real analytics and interactive visualization web apps</td>
 </table>
 
 ## 🚀Installation
