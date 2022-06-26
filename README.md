@@ -33,7 +33,7 @@ Update hourly, and the hope that it will be reusable for every bot developers.
   - [Limitations](#limitations)
   - [Acknowledgements](https://github.com/sinkaroid/disgrowth/blob/master/ACKNOWLEDGEMENTS.md)
   - [Legal](#legal)
-  - [For non JavaScript libraries](#Non-JavaScript)
+  - [For non JavaScript libraries](https://github.com/sinkaroid/disgrowth/tree/api)
 
 ## The problem
 There is a plenty monitoring and observability service for cloud-scale application, such as StatsD, DataDog, Prometheus, and etc. Those services are great for monitoring, but require a lot of effort to posts every parts and setup properly, many people probably still confused how to extends their discord bots with those services. Apart from complexity, the services is running, means It will consume extra Memory than usual, especially DataDog.
