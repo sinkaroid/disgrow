@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990435233683894332/disgrowth-memek.png" alt="disgrowth"></a>
+<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990438129242628196/DISGROWTH_.png" alt="disgrowth"></a>
 
 
 <h4 align="center">A growth increments for your Discord bots</h4>
