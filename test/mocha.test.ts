@@ -1,11 +1,8 @@
 import Disgrowth from "../build/index";
-
-const bot = new Disgrowth("724047481561809007");
-
 import chai from "chai";
-const expect = chai.expect;
 import { Data } from "../src/interfaces";
-
+const expect = chai.expect;
+const bot = new Disgrowth("724047481561809007");
 
 
 describe("Disgrowth testing", () => {
