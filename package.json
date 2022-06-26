@@ -1,0 +1,46 @@
+{
+  "name": "disgrowth",
+  "version": "1.0.4",
+  "description": "A growth increments for your Discord bots",
+  "main": "build/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "rm -rf build/ && tsc",
+    "docs": "npx typedoc --entryPointStrategy expand src/ index.ts",
+    "lint": "npx eslint . --ext .ts",
+    "lint:fix": "npx eslint . --fix",
+    "test:dry": "npx ts-node test/disgrowth.test.ts",
+    "test:mocha": "npx mocha --timeout 15000 -r ts-node/register 'test/mocha.test.ts'"
+  },
+  "keywords": [
+    "discord",
+    "discordbot",
+    "discordapp",
+    "discordstats",
+    "topgg"
+  ],
+  "author": "sinkaroid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinkaroid/disgrowth/issues"
+  },
+  "homepage": "https://github.com/sinkaroid/disgrowth#readme",
+  "dependencies": {
+    "phin": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "chai": "^4.3.6",
+    "eslint": "^7.32.0",
+    "mocha": "^10.0.0",
+    "npx": "^10.2.2",
+    "ts-node": "^10.8.1",
+    "typedoc": "^0.22.5",
+    "typedoc-plugin-rename-defaults": "^0.4.0",
+    "typescript": "^4.6.3"
+  }
+}
