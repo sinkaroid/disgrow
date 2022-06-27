@@ -3,13 +3,13 @@ import slowDown from "express-slow-down";
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 50,
+  max: 100,
   message: "Too nasty, please slow down"
 });
 
 const slow = slowDown({
   delayAfter: 50,
-  windowMs: 15 * 60 * 1000,
+  windowMs: 30000,
   delayMs: 1000,
   maxDelayMs: 20000,
 });
