@@ -7,6 +7,7 @@ import {
 
 interface IGetData {
   title: string;
+  id: string;
   description: string;
   avatar: string;
   server_count: number;
@@ -141,8 +142,12 @@ export async function scrapeContent(url: string) {
       });
     }
 
+    //get id= from url
+    const id = url.split("/")[4];
+
     const objectData: IGetData = {
       title: title,
+      id: id,
       description: info,
       avatar: image,
       server_count: servers,
