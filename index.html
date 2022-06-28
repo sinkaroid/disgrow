@@ -1,0 +1,164 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>disgrowth</title><meta name="description" content="Documentation for disgrowth"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">disgrowth</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> disgrowth </h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography"><div align="center">
+<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990438129242628196/DISGROWTH_.png" alt="disgrowth"></a>
+
+
+<h4 align="center">A growth increments for your Discord bots</h4>
+
+<p align="center">
+    <a href="https://github.com/sinkaroid/disgrowth/actions/workflows/disgrowth.yml"><img src="https://github.com/sinkaroid/disgrowth/workflows/Test%20disgrowth/badge.svg"></a>
+    <a href="https://codeclimate.com/github/sinkaroid/disgrowth/maintainability"><img src="https://api.codeclimate.com/v1/badges/726d1d6eb057432f9432/maintainability" /></a>
+</p>
+
+<p>Disgrowth is a module for Discord bots. It allows you to check your bot&#39;s growth statistics,<br>Update hourly, and the hope that it will be reusable for every bot developers.<br><a href="#Prerequisites">The prerequisites</a> should be met before using this library.</p>
+<p><a href="https://github.com/sinkaroid/disgrowth/blob/master/CONTRIBUTING.md">Contributing</a> •
+<a href="https://sinkaroid.github.io/disgrowth">Documentation</a> •
+<a href="https://github.com/sinkaroid/disgrowth/issues/new/choose">Report Issues</a></p>
+</div>
+
+<hr>
+<ul>
+<li><a href="#">Disgrowth</a><ul>
+<li><a href="#Subprojects">Subprojects</a><ul>
+<li><a href="https://github.com/sinkaroid/disgrowth/tree/api"><code>disgrowth/tree/api</code></a></li>
+<li><a href="#"><code>disgrowth/tree/master</code></a></li>
+</ul>
+</li>
+<li><a href="#the-problem">The problem</a></li>
+<li><a href="#the-solution">The solution</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#Installation">Installation</a><ul>
+<li><a href="#Prerequisites">Prerequisites</a></li>
+<li><a href="#Prerequisites">Posting bot stats</a></li>
+</ul>
+</li>
+<li><a href="#Documentation">Documentation</a><ul>
+<li><a href="#Example">Example</a></li>
+<li><a href="#The-returns">The returns</a></li>
+</ul>
+</li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="https://github.com/sinkaroid/disgrowth/blob/master/ACKNOWLEDGEMENTS.md">Acknowledgements</a></li>
+<li><a href="#legal">Legal</a></li>
+<li><a href="https://github.com/sinkaroid/disgrowth/tree/api">For non JavaScript libraries</a></li>
+</ul>
+</li>
+</ul>
+
+<a href="#the-problem" id="the-problem" style="color: inherit; text-decoration: none;">
+  <h2>The problem</h2>
+</a>
+<p>There is a plenty monitoring and observability service for cloud-scale application, such as StatsD, DataDog, Prometheus, and etc. Those services are great for monitoring, but require a lot of effort to posts every parts and setup properly, many people probably still confused how to extends their discord bots with those services. Apart from complexity, the services is running, means It will consume extra Memory than usual, especially DataDog.</p>
+
+<a href="#the-solution" id="the-solution" style="color: inherit; text-decoration: none;">
+  <h2>The solution</h2>
+</a>
+<p>There is a simple way to monitor your bot&#39;s growth. This library allows you to check your bot&#39;s growth statistics, no need posts any data, no need to extends or change your bot constructor, out of the box and less of pain.  </p>
+<p>For non JavaScript libraries, <a href="https://github.com/sinkaroid/disgrowth/tree/api">there is an API for it</a>!  </p>
+
+<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+  <h2>Features</h2>
+</a>
+<p>Don&#39;t expect more with zero configuration, the point is it can give you actionable data related your bots increments.  </p>
+<ul>
+<li>Summary stats daily and hourly</li>
+<li>Average increments</li>
+<li>Approximate increments</li>
+<li>Compare with other bots</li>
+<li>Expect even more features in the future..</li>
+</ul>
+<table>
+    <td><b>NOTE:</b> This module just give you an actionable data. If you really want to build a real monitoring service with a bar chart, fancy graph or anything, use real analytics and interactive visualization web apps</td>
+</table>
+
+
+<a href="#🚀installation" id="🚀installation" style="color: inherit; text-decoration: none;">
+  <h2>🚀Installation</h2>
+</a>
+<p><code>yarn add disgrowth</code> / <code>npm i disgrowth</code></p>
+
+<a href="#prerequisites" id="prerequisites" style="color: inherit; text-decoration: none;">
+  <h2>Prerequisites</h2>
+</a>
+<table>
+    <td><b>NOTE:</b> NodeJS 14.x or higher</td>
+</table>
+
+<blockquote>
+<p>Your bot must be listed on <a href="https://top.gg">top.gg</a>, because this module consume top.gg data, and You must <strong>Posting bot stats</strong> at least once per hour, there is a <code>stats_hourly</code> property in this module, otherwise null as it misleading.</p>
+</blockquote>
+
+<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+  <h2>Documentation</h2>
+</a>
+<p>The documentation can be found <a href="https://sinkaroid.github.io/disgrowth">https://sinkaroid.github.io/disgrowth</a></p>
+
+<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+  <h3>Example</h3>
+</a>
+<pre><code class="language-js"><span class="hl-0">import</span><span class="hl-1"> </span><span class="hl-2">Disgrowth</span><span class="hl-1"> </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&quot;disgrowth&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">bot</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">Disgrowth</span><span class="hl-1">(</span><span class="hl-3">&quot;724047481561809007&quot;</span><span class="hl-1">);</span><br/><span class="hl-2">bot</span><span class="hl-1">.</span><span class="hl-6">myStats</span><span class="hl-1">().</span><span class="hl-6">then</span><span class="hl-1">((</span><span class="hl-2">res</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> { </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-6">log</span><span class="hl-1">(</span><span class="hl-3">&quot;myStats&quot;</span><span class="hl-1">, </span><span class="hl-2">res</span><span class="hl-1">); });</span>
+</code></pre>
+<blockquote>
+<p>CommonJS should do with <code>const Disgrowth = require(&quot;disgrowth&quot;);</code>  </p>
+</blockquote>
+
+<a href="#the-returns" id="the-returns" style="color: inherit; text-decoration: none;">
+  <h3>The returns</h3>
+</a>
+<ul>
+<li><code>res.data</code>: object<ul>
+<li>The bot&#39;s information</li>
+</ul>
+</li>
+<li><code>res.data.stats_daily</code> : object<ul>
+<li>List of daily stats in the last 25 days</li>
+</ul>
+</li>
+<li><code>res.data.stats_hourly</code> : object<ul>
+<li>List of hourly stats in the last 25 hours</li>
+</ul>
+</li>
+<li><code>res.average_server_growth_hourly</code> : number<ul>
+<li>Average server growth hourly</li>
+</ul>
+</li>
+<li><code>res.average_server_growth_daily</code> : number<ul>
+<li>Average server growth daily</li>
+</ul>
+</li>
+<li><code>res.average_server_growth_monthly</code> : number<ul>
+<li>Average server growth monthly</li>
+</ul>
+</li>
+<li><code>res.average_votes_growth_monthly</code> : number<ul>
+<li>Average votes growth monthly on top.gg</li>
+</ul>
+</li>
+<li><code>res.approximate_credits_rewards_monthly</code> : string<ul>
+<li>Approximate <a href="https://support.top.gg/support/solutions/articles/73000528198-using-your-vote-credit#:~:text=What%20are%20Vote%20Credits%3F,vote%20credit%20as%20a%20reward.">credits rewards</a> on top.gg</li>
+</ul>
+</li>
+<li><code>res.approximate_server_growth_three_months</code> : number<ul>
+<li>Approximate server growth after 3 months</li>
+</ul>
+</li>
+<li><code>res.approximate_server_growth_annually</code> : number<ul>
+<li>Approximate server growth after 1 year</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-js"><span class="hl-1">{</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;data&quot;</span><span class="hl-1">:{</span><br/><span class="hl-1">      </span><span class="hl-3">&quot;title&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Scathach&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">&quot;server_count&quot;</span><span class="hl-2">:</span><span class="hl-7">17997</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">&quot;shard_count&quot;</span><span class="hl-2">:</span><span class="hl-7">2</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">&quot;monthly_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">5587</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">31927</span><br/><span class="hl-1">   },</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;stats_daily&quot;</span><span class="hl-1">:[</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;June 25, 2022&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17997</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">31927</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+76&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;votes_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+432&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;June 24, 2022&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17921</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">31495</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+154&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;votes_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+687&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;0&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-4">null</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;0&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;votes_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;0&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;June 22, 2022&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17767</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">30808</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+97&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;votes_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+251&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;June 21, 2022&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17670</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_votes&quot;</span><span class="hl-2">:</span><span class="hl-7">30557</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+109&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;votes_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+259&quot;</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">   ], </span><span class="hl-8">// 25 items</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;stats_hourly&quot;</span><span class="hl-1">:[</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Jun, 25 24:00&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17997</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+4&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Jun, 25 23:00&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17993</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;0&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Jun, 25 22:00&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17993</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+4&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Jun, 25 21:00&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17989</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;+7&quot;</span><br/><span class="hl-1">      },</span><br/><span class="hl-1">      {</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;date&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;Jun, 25 20:00&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;total_server&quot;</span><span class="hl-2">:</span><span class="hl-7">17982</span><span class="hl-1">,</span><br/><span class="hl-1">         </span><span class="hl-3">&quot;server_growth&quot;</span><span class="hl-2">:</span><span class="hl-3">&quot;-1&quot;</span><br/><span class="hl-1">      }</span><br/><span class="hl-1">   ], </span><span class="hl-8">// 25 items</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;average_server_growth_hourly&quot;</span><span class="hl-1">:</span><span class="hl-7">3</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;average_server_growth_daily&quot;</span><span class="hl-1">:</span><span class="hl-7">66</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;average_server_growth_monthly&quot;</span><span class="hl-1">:</span><span class="hl-7">1654</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;average_votes_growth_monthly&quot;</span><span class="hl-1">:</span><span class="hl-7">5586</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;approximate_credits_rewards_monthly&quot;</span><span class="hl-1">:</span><span class="hl-3">&quot;20.485 USD&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;approximate_server_growth_three_months&quot;</span><span class="hl-1">:</span><span class="hl-7">6006</span><span class="hl-1">,</span><br/><span class="hl-1">   </span><span class="hl-3">&quot;approximate_server_growth_annually&quot;</span><span class="hl-1">:</span><span class="hl-7">24090</span><br/><span class="hl-1">}</span>
+</code></pre>
+
+<a href="#limitations" id="limitations" style="color: inherit; text-decoration: none;">
+  <h2>Limitations</h2>
+</a>
+<ul>
+<li><code>stats_daily</code> and <code>stats_hourly</code> are limited to 25 items, If you want to save them all in every months You should save them in somewhere else, like database.</li>
+</ul>
+
+<a href="#legal" id="legal" style="color: inherit; text-decoration: none;">
+  <h2>Legal</h2>
+</a>
+<p>This tool can be freely copied, modified, altered, distributed without any attribution whatsoever. However, if you feel
+like this tool deserves an attribution, mention it. It won&#39;t hurt anybody</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/index.html">index</a></li><li class=" tsd-kind-module"><a href="modules/src_const.html">src/const</a></li><li class=" tsd-kind-module"><a href="modules/src_interfaces.html">src/interfaces</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
