@@ -1,6 +1,6 @@
 {
   "name": "disgrowth-press",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Analytics and growth increments for your Discord bots",
   "main": "build/src/index.js",
   "scripts": {
