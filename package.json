@@ -1,6 +1,6 @@
 {
   "name": "disgrowth",
-  "version": "1.0.4",
+  "version": "1.0.14",
   "description": "A growth increments for your Discord bots",
   "main": "build/index.js",
   "types": "index.d.ts",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/sinkaroid/disgrowth#readme",
   "dependencies": {
-    "phin": "^3.6.1"
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
