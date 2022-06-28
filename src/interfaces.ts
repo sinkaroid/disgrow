@@ -1,5 +1,6 @@
 export interface IGetData {
   title: string;
+  id: string;
   description: string;
   avatar: string;
   server_count: number;

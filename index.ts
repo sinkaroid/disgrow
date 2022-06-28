@@ -1,5 +1,5 @@
-import { request } from "./src/utils";
 import c from "./src/const";
+import get from "axios";
 
 class Disgrowth {
 
@@ -22,10 +22,11 @@ class Disgrowth {
   * ```
   * https://disgrowth.mod.land/stats/get?id=724047481561809007
   */
-  async myStats(): Promise<object> {
+  async myStats() {
     const endpoint = `${this.base}/stats/get?id=${this.bot}`;
-    const res = await request(endpoint, "GET");
-    return res.body as object;
+    const res = await get(endpoint,
+      { headers: { "Content-Type": "application/json" } });
+    return res.data;
   }
 
 }
