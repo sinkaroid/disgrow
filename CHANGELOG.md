@@ -1,3 +1,13 @@
+#### 0.0.3 (2022-06-28)
+
+##### Chores
+
+* **release:**  0.0.3-api (a8b68772)
+
+##### New Features
+
+*  add id property (cfefdb01)
+
 #### 0.0.2 (2022-06-26)
 
 ##### Build System / Dependencies
