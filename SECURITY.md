@@ -1,4 +1,4 @@
-# Disgrowth-press Security
+# Disgrow-press Security
 
 ## Reporting vulnerabilities
 
