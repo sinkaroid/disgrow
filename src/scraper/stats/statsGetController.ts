@@ -164,7 +164,7 @@ export async function scrapeContent(url: string) {
       average_server_growth_daily: averageIncrementRound,
       average_server_growth_monthly: totalIncrement,
       average_votes_growth_monthly: total_votes,
-      approximate_credits_rewards_monthly: `${approximateCreditsReward} USD`,
+      approximate_credits_rewards_monthly: `${approximateCreditsReward.toFixed(2)} USD`,
       approximate_server_growth_three_months: approximateAfterThreeMonths,
       approximate_server_growth_annually: approximateAfterYear
     };
