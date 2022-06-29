@@ -1,4 +1,4 @@
-# Disgrowth Security
+# Disgrow Security
 
 ## Reporting vulnerabilities
 

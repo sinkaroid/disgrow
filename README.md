@@ -1,29 +1,29 @@
 <div align="center">
-<a href="https://sinkaroid.github.io/disgrowth"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/990438129242628196/DISGROWTH_.png" alt="disgrowth"></a>
+<a href="https://sinkaroid.github.io/disgrow"><img width="470" src="https://cdn.discordapp.com/attachments/952117487166705747/991492289262268427/disgrow.png" alt="disgrow"></a>
 
 
 <h4 align="center">A growth increments for your Discord bots</h4>
 
 <p align="center">
-	<a href="https://github.com/sinkaroid/disgrowth/actions/workflows/disgrowth.yml"><img src="https://github.com/sinkaroid/disgrowth/workflows/Test%20disgrowth/badge.svg"></a>
-	<a href="https://codeclimate.com/github/sinkaroid/disgrowth/maintainability"><img src="https://api.codeclimate.com/v1/badges/726d1d6eb057432f9432/maintainability" /></a>
+	<a href="https://github.com/sinkaroid/disgrow/actions/workflows/disgrow.yml"><img src="https://github.com/sinkaroid/disgrow/workflows/Test%20disgrow/badge.svg"></a>
+	<a href="https://codeclimate.com/github/sinkaroid/disgrow/maintainability"><img src="https://api.codeclimate.com/v1/badges/7a377c18fa1edbefbf29/maintainability" /></a>
 </p>
 
-Disgrowth is a module for Discord bots. It allows you to check your bot's growth statistics,  
+disgrow is a module for Discord bots. It allows you to check your bot's growth statistics,  
 Update hourly, and the hope that it will be reusable for every bot developers.  
 [The prerequisites](#Prerequisites) should be met before using this library.
 
-<a href="https://github.com/sinkaroid/disgrowth/blob/master/CONTRIBUTING.md">Contributing</a> •
-<a href="https://sinkaroid.github.io/disgrowth">Documentation</a> •
-<a href="https://github.com/sinkaroid/disgrowth/issues/new/choose">Report Issues</a>
+<a href="https://github.com/sinkaroid/disgrow/blob/master/CONTRIBUTING.md">Contributing</a> •
+<a href="https://sinkaroid.github.io/disgrow">Documentation</a> •
+<a href="https://github.com/sinkaroid/disgrow/issues/new/choose">Report Issues</a>
 </div>
 
 ---
 
-- [Disgrowth](#)
+- [disgrow](#)
   - [Subprojects](#Subprojects)
-    - [`disgrowth/tree/api`](https://github.com/sinkaroid/disgrowth/tree/api)
-    - [`disgrowth/tree/master`](#) 
+    - [`disgrow/tree/api`](https://github.com/sinkaroid/disgrow/tree/api)
+    - [`disgrow/tree/master`](#) 
   - [The problem](#the-problem)
   - [The solution](#the-solution)
   - [Features](#features)
@@ -34,9 +34,9 @@ Update hourly, and the hope that it will be reusable for every bot developers.
     - [Example](#Example)
     - [The returns](#The-returns)
   - [Limitations](#limitations)
-  - [Acknowledgements](https://github.com/sinkaroid/disgrowth/blob/master/ACKNOWLEDGEMENTS.md)
+  - [Acknowledgements](https://github.com/sinkaroid/disgrow/blob/master/ACKNOWLEDGEMENTS.md)
   - [Legal](#legal)
-  - [For non JavaScript libraries](https://github.com/sinkaroid/disgrowth/tree/api)
+  - [For non JavaScript libraries](https://github.com/sinkaroid/disgrow/tree/api)
 
 ## The problem
 There is a plenty monitoring and observability service for cloud-scale application, such as StatsD, DataDog, Prometheus, and etc. Those services are great for monitoring, but require a lot of effort to posts every parts and setup properly, many people probably still confused how to extends their discord bots with those services. Apart from complexity, the services is running, means It will consume extra Memory than usual, especially DataDog.
@@ -44,7 +44,7 @@ There is a plenty monitoring and observability service for cloud-scale applicati
 ## The solution
 There is a simple way to monitor your bot's growth. This library allows you to check your bot's growth statistics, no need posts any data, no need to extends or change your bot constructor, out of the box and less of pain.  
 
-For non JavaScript libraries, [there is an API for it](https://github.com/sinkaroid/disgrowth/tree/api)!  
+For non JavaScript libraries, [there is an API for it](https://github.com/sinkaroid/disgrow/tree/api)!  
 
 
 ## Features
@@ -61,7 +61,7 @@ Don't expect more with zero configuration, the point is it can give you actionab
 </table>
 
 ## 🚀Installation
-`yarn add disgrowth` / `npm i disgrowth`
+`yarn add disgrow` / `npm i disgrow`
 
 ## Prerequisites
 <table>
@@ -71,15 +71,15 @@ Don't expect more with zero configuration, the point is it can give you actionab
 > Your bot must be listed on [top.gg](https://top.gg), because this module consume top.gg data, and You must **Posting bot stats** at least once per hour, there is a `stats_hourly` property in this module, otherwise null as it misleading.
 
 ## Documentation
-The documentation can be found [https://sinkaroid.github.io/disgrowth](https://sinkaroid.github.io/disgrowth)
+The documentation can be found [https://sinkaroid.github.io/disgrow](https://sinkaroid.github.io/disgrow)
 ### Example
 ```js
-import Disgrowth from "disgrowth";
+import Disgrow from "disgrow";
 
-const bot = new Disgrowth("724047481561809007");
+const bot = new Disgrow("724047481561809007");
 bot.myStats().then((res) => { console.log("myStats", res); });
 ```
-> CommonJS should do with `const Disgrowth = require("disgrowth");`  
+> CommonJS should do with `const Disgrow = require("disgrow");`  
 
 ### The returns
 - `res.data`: object

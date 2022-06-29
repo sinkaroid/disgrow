@@ -1,11 +1,11 @@
-import Disgrowth from "../index";
+import Disgrow from "../index";
 import chai from "chai";
 import { Data } from "../src/interfaces";
 const expect = chai.expect;
-const bot = new Disgrowth("724047481561809007");
+const bot = new Disgrow("724047481561809007");
 
 
-describe("Disgrowth testing", () => {
+describe("Disgrow testing", () => {
   describe("gets the bot increments", () => {
     let data: Data;
     before(async () => {

@@ -1,15 +1,15 @@
 {
-  "name": "disgrowth",
-  "version": "1.0.14",
+  "name": "disgrow",
+  "version": "1.0.15",
   "description": "A growth increments for your Discord bots",
   "main": "build/index.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "rm -rf build/ && tsc",
-    "docs": "npx typedoc --cname disgrowth.js.org --entryPointStrategy expand src/ index.ts",
+    "docs": "npx typedoc --cname disgrow.js.org --entryPointStrategy expand src/ index.ts",
     "lint": "npx eslint . --ext .ts",
     "lint:fix": "npx eslint . --fix",
-    "test:dry": "npx ts-node test/disgrowth.test.ts",
+    "test:dry": "npx ts-node test/disgrow.test.ts",
     "test:mocha": "npx mocha --timeout 15000 -r ts-node/register 'test/mocha.test.ts'"
   },
   "keywords": [
@@ -22,9 +22,9 @@
   "author": "sinkaroid",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sinkaroid/disgrowth/issues"
+    "url": "https://github.com/sinkaroid/disgrow/issues"
   },
-  "homepage": "https://github.com/sinkaroid/disgrowth#readme",
+  "homepage": "https://github.com/sinkaroid/disgrow#readme",
   "dependencies": {
     "axios": "^0.27.2"
   },

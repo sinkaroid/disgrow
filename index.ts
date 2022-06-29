@@ -1,12 +1,12 @@
 import c from "./src/const";
 import get from "axios";
 
-class Disgrowth {
+class Disgrow {
 
   private base: string
   private bot: string
 
-  static default: typeof Disgrowth;
+  static default: typeof Disgrow;
 
   constructor(bot: string) {
     if (!bot) throw new Error(c.error.missingBotId);
@@ -18,9 +18,9 @@ class Disgrowth {
   * Get the summary stats increments of a bots
   * @example
   * ```js
-  * Disgrowth.myStats().then((res) => { console.log("myStats", res); });
+  * Disgrow.myStats().then((res) => { console.log("myStats", res); });
   * ```
-  * https://disgrowth.mod.land/stats/get?id=724047481561809007
+  * https://disgrow.mod.land/stats/get?id=724047481561809007
   */
   async myStats() {
     const endpoint = `${this.base}/stats/get?id=${this.bot}`;
@@ -31,5 +31,5 @@ class Disgrowth {
 
 }
 
-Disgrowth.default = Disgrowth;
-export = Disgrowth;
+Disgrow.default = Disgrow;
+export = Disgrow;
