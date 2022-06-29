@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/sinkaroid/disgrow#readme",
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "hchs-vue-charts": "^1.2.8"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
