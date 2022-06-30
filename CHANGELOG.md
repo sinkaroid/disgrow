@@ -1,3 +1,23 @@
+#### 0.0.4 (2022-06-29)
+
+##### Chores
+
+* **release:**
+  *  0.0.4 (b770c4ae)
+  *  0.0.3-api (a8b68772)
+
+##### Documentation Changes
+
+*  update changelogs (f06ca48a)
+
+##### New Features
+
+*  add id property (cfefdb01)
+
+##### Bug Fixes
+
+*  apply comma fixes for approximateCreditsReward (08c0f66a)
+
 #### 0.0.3 (2022-06-28)
 
 ##### Chores
