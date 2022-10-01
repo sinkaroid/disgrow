@@ -1,0 +1,48 @@
+{
+  "name": "disgrow-press",
+  "version": "0.0.5",
+  "description": "Actionable data and growth increments for your Discord bots",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "start": "node build/src/index.js",
+    "test": "ts-node test/mock-site.ts",
+    "start:prod": "npm run build && node build/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "lint": "npx eslint . --ext .ts",
+    "lint:fix": "npx eslint . --fix",
+    "postinstall": "npm run build",
+    "test:stats": "npx start-server-and-test 3000 \"curl -v http://localhost:3000/stats/get?id=724047481561809007 | jq '.'\""
+  },
+  "keywords": [],
+  "author": "sinkaroid",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "express-slow-down": "^1.4.0",
+    "phin": "^3.6.1",
+    "pino": "^7.11.0",
+    "pino-pretty": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express-rate-limit": "^6.0.0",
+    "@types/express-slow-down": "^1.3.2",
+    "@types/node": "^14.14.37",
+    "@types/tough-cookie": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^7.32.0",
+    "npx": "^10.2.2",
+    "start-server-and-test": "^1.14.0",
+    "ts-node": "^10.8.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "4.6.3"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
