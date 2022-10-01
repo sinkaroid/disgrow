@@ -1,6 +1,6 @@
 {
   "name": "disgrow",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "A growth increments for your Discord bots",
   "main": "build/index.js",
   "types": "index.d.ts",
@@ -39,8 +39,9 @@
     "mocha": "^10.0.0",
     "npx": "^10.2.2",
     "ts-node": "^10.8.1",
-    "typedoc": "^0.22.5",
-    "typedoc-plugin-rename-defaults": "^0.4.0",
+    "typedoc": "^0.23.10",
+    "typedoc-plugin-rename-defaults": "^0.6.4",
+    "typedoc-theme-hierarchy": "^3.0.0",
     "typescript": "^4.6.3"
   }
 }
