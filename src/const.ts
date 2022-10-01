@@ -1,6 +1,6 @@
 export default {
   endpoint: {
-    baseurl: "https://disgrow-production.up.railway.app"
+    baseurl: "https://disgrow.sinkaroid.org"
   },
   error: {
     missingBotId: "Missing bot id"
