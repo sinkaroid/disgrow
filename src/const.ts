@@ -1,6 +1,6 @@
 export default {
   endpoint: {
-    baseurl: "https://disgrow.sinkaroid.org"
+    baseurl: "https://disgrow.fly.dev"
   },
   error: {
     missingBotId: "Missing bot id"

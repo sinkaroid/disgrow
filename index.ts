@@ -20,7 +20,7 @@ class Disgrow {
   * ```js
   * Disgrow.myStats().then((res) => { console.log("myStats", res); });
   * ```
-  * https://disgrow.mod.land/stats/get?id=724047481561809007
+  * https://disgrow.fly.dev/stats/get?id=724047481561809007
   */
   async myStats() {
     const endpoint = `${this.base}/stats/get?id=${this.bot}`;
