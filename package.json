@@ -1,6 +1,6 @@
 {
   "name": "disgrow",
-  "version": "1.0.20",
+  "version": "2.0.1",
   "description": "A growth increments for your Discord bots",
   "main": "build/index.js",
   "types": "index.d.ts",
